@@ -23,28 +23,7 @@ paths:
                   status:
                     type: string
                     example: ok
-  /usuarios:
-    get:
-      summary: Listar usuarios
-      operationId: listUsuarios
-      responses:
-        '200':
-          description: Lista de usuarios
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Usuario'
-              examples:
-                demo:
-                  value:
-                    - id: "u1"
-                      nombre: "Ana"
-                      email: "ana@example.com"
-                    - id: "u2"
-                      nombre: "Juan"
-                      email: "juan@example.com"
+  
     post:
       summary: Crear usuario
       operationId: createUsuario
